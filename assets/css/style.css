@@ -99,6 +99,8 @@ nav a:hover {
 
 /* Playing button style */
 #start {
+  position: absolute;
+  top: 0;
   background: #1fc416;
   border-bottom: 6px inset rgba(10, 49, 10, 0.5);
   border-left: 6px inset rgba(10, 49, 10, 0.5);
@@ -110,7 +112,7 @@ nav a:hover {
   display: inline-block;
   font-size: 2.2rem;
   margin: 1rem;
-  min-width: 200px;
+  min-width: 100px;
   padding: 0.5rem;
   text-transform: uppercase;
   width: auto;
@@ -119,4 +121,31 @@ nav a:hover {
 .default-text {
   font-size: 0.8em; /* Adjust the font size as needed */
   color: #999; /* Adjust the color as needed */
+}
+
+/* -------------------------------------------------- MEDIA QUERIES --> */
+
+@media only screen and (max-width: 600px) {
+  nav a {
+    display: block;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  header h1 {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #start {
+    top: 55px;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 }
