@@ -1,21 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Select the audio element
   const audio = document.querySelector("audio");
-  const stopPlaying = document.querySelector("#stop");
-  const startPlaying = document.querySelector("#start");
+  const toggleButton = document.querySelector(".toggle");
 
-  const playAudio = () => {
-    audio.play();
-    // Remove the event listener to prevent multiple plays
-    document.removeEventListener("click", playAudio);
+  let initialClick = true; // Variable to track if it's the first click
+
+  const toggleAudio = () => {
+    if (initialClick) {
+      audio.play();
+      initialClick = false;
+      document.removeEventListener("click", toggleAudio);
+    } else {
+      if (audio.paused) {
+        audio.play();
+        console.log("Playing");
+      } else {
+        audio.pause();
+        updateButton();
+        toggleButton.console.log("Not playing");
+      }
+    }
+    updateButton();
   };
 
-  const stopAudio = () => {
-    audio.pause();
-    audio.currentTime = 0;
-  };
+  function updateButton() {
+    const icon = audio.paused
+      ? `<i class="fas fa-play"></i>`
+      : `<i class="fas fa-pause"></i>`;
+    toggleButton.innerHTML = icon;
+    toggleButton.style.backgroundColor = audio.paused ? "#1fc416" : "red";
+  }
 
-  document.addEventListener("click", playAudio);
-  stopPlaying.addEventListener("click", stopAudio);
-  startPlaying.addEventListener("click", playAudio);
+  toggleButton.addEventListener("click", toggleAudio);
+  document.addEventListener("click", toggleAudio);
 });

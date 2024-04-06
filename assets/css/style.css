@@ -96,3 +96,27 @@ nav a:hover {
   margin: auto;
   padding: 20px;
 }
+
+/* Playing button style */
+#start {
+  background: #1fc416;
+  border-bottom: 6px inset rgba(10, 49, 10, 0.5);
+  border-left: 6px inset rgba(10, 49, 10, 0.5);
+  border-right: 6px inset rgba(17, 199, 20, 0.5);
+  border-top: 6px inset rgba(17, 199, 20, 0.5);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.2rem;
+  margin: 1rem;
+  min-width: 200px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  width: auto;
+}
+
+.default-text {
+  font-size: 0.8em; /* Adjust the font size as needed */
+  color: #999; /* Adjust the color as needed */
+}
