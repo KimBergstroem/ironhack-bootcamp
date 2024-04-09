@@ -6,6 +6,10 @@ Welcome to MY IronHack Bootcamp 2024 repository! This repository serves as the c
 
 The IronHack Bootcamp is an intensive program designed to deepen my knowledge of JavaScript and Vue.js framework, empowering them to become proficient frontend developer. My main project in this folder should end up with building a portfolio website.
 
+Here's a list of the challenges I've completed so far:
+
+1. [Week 1 - HTML & CSS](week1-labs/)
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -28,7 +32,7 @@ Forking the GitHub repository allows you to create a copy of the original reposi
 
 **2. Locate the Repository:**
 
-- Find the repository at [https://github.com/KimBergstroem/PP4](https://github.com/KimBergstroem/PP4).
+- Find the repository at [https://github.com/KimBergstroem/ironhack-bootcamp](https://github.com/KimBergstroem/ironhack-bootcamp).
 
 **3. Fork the Repository:**
 
@@ -40,7 +44,7 @@ Cloning the repository allows you to have a local copy of the project on your co
 
 **1. Get the Repository URL:**
 
-- Navigate to [https://github.com/KimBergstroem/PP4](https://github.com/KimBergstroem/PP4).
+- Navigate to [https://github.com/KimBergstroem/ironhack-bootcamp](https://github.com/KimBergstroem/ironhack-bootcamp).
 - Click the green "Code" button at the top right.
 
 **2. Clone the Repository:**
@@ -52,13 +56,17 @@ Cloning the repository allows you to have a local copy of the project on your co
 - Open your terminal or command prompt and navigate to the directory where you want to clone the repository.
 - Run `git clone` followed by the copied URL.
   ```bash
-  git clone https://github.com/KimBergstroem/PP4.git
+  git clone https://github.com/KimBergstroem/ironhack-bootcamp.git
   ```
 - Press Enter, and Git will clone the repository to your local machine.
 
 ## Usage
 
 The usage of this repository is intended solely for educational purposes within the IronHack Bootcamp. It serves as a platform for me to showcase MY work and for instructors to assess my progress.
+
+Here's a list of the challenges I've completed so far:
+
+1. [Week 1 - HTML & CSS](week1-labs/)
 
 ## Features
 
