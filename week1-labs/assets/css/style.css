@@ -9,7 +9,9 @@
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
-ol[role="list"] {
+ol[role="list"],
+ul,
+ol {
   list-style: none;
 }
 
@@ -33,7 +35,8 @@ video {
   /* colors */
   --clr-blue: rgb(67, 163, 230);
   --clr-darkBlue: rgba(25, 33, 41);
-  --clr-text: rgb(0, 0, 0);
+  --clr-textBlack: rgb(0, 0, 0);
+  --clr-textWhite: rgb(255, 255, 255);
 
   /* font families */
   --ff-base: "Roboto", sans-serif;
@@ -56,9 +59,8 @@ body {
 }
 
 a {
-  color: var(--text);
+  color: var(--clr-textBlack);
   text-decoration: none;
-  font-size: 2em;
 }
 
 h1,
@@ -101,4 +103,32 @@ h4 {
 h5 {
   font-size: 1.2em;
   line-height: 1em;
+}
+
+/*-------------------------------------Navbar */
+.nav-bar {
+  background-color: var(--clr-darkBlue);
+}
+.nav-bar a {
+  color: var(--clr-textWhite);
+  font-size: 2em;
+}
+
+/*-------------------------------------Header */
+header {
+  height: 650px;
+}
+
+.header-bg {
+  background: url(https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg)
+    0 0 / cover no-repeat;
+}
+
+header h2 {
+  color: var(--clr-textWhite);
+  text-shadow: #020819 8px -20px 9px;
+}
+
+.quote {
+  font-size: 2.5em;
 }
