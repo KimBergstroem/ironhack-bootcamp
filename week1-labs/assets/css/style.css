@@ -284,6 +284,23 @@ header h2 {
   height: 180px;
 }
 
+/*-------------------------------------Schedule Section */
+.table-wrapper {
+  display: flex;
+  max-width: 850px;
+}
+
+#schedule {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+#schedule table {
+  text-align: center;
+}
+
 /*-------------------------------------Footer */
 .footer {
   display: flex;
@@ -311,6 +328,59 @@ header h2 {
 
 .footer a {
   color: var(--clr-blue);
+}
+
+/*-------------------------------------Form */
+form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }
 
 /*-------------------------------------Media Queries */
