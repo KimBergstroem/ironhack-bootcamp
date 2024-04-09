@@ -1,5 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
 
+:root {
+  /* colors */
+  --clr-blue: rgb(67, 163, 230);
+  --clr-darkBlue: rgba(25, 33, 41);
+  --clr-textBlack: rgb(0, 0, 0);
+  --clr-textWhite: rgb(255, 255, 255);
+
+  /* font families */
+  --ff-base: "Roboto", sans-serif;
+  --ff-accent: "Roboto Condensed", serif;
+
+  /* font sizes */
+  --fs-h1: 9em;
+  --fs-h2: 5em;
+  --fs-h3: 4.2em;
+  --fs-h4: 1.5em;
+  --fs-h5: 1.2em;
+  --fs-p: 2em;
+
+  /* font weights */
+  --fw-regulare: 100;
+  --fw-bold: 300;
+  --fw-boldest: 700;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -12,6 +37,8 @@ ul[role="list"],
 ol[role="list"],
 ul,
 ol {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -31,23 +58,6 @@ video {
   max-width: 100%;
 }
 
-:root {
-  /* colors */
-  --clr-blue: rgb(67, 163, 230);
-  --clr-darkBlue: rgba(25, 33, 41);
-  --clr-textBlack: rgb(0, 0, 0);
-  --clr-textWhite: rgb(255, 255, 255);
-
-  /* font families */
-  --ff-base: "Roboto", sans-serif;
-  --ff-accent: "Roboto Condensed", serif;
-
-  /* font weights */
-  --fw-regulare: 100;
-  --fw-bold: 300;
-  --fw-black: 700;
-}
-
 html,
 body {
   margin: 0;
@@ -56,11 +66,6 @@ body {
   font-size: 10px;
   line-height: 3.5rem;
   font-weight: 300;
-}
-
-a {
-  color: var(--clr-textBlack);
-  text-decoration: none;
 }
 
 h1,
@@ -80,29 +85,39 @@ h2 {
 }
 
 h1 {
-  font-size: 9em;
+  font-size: var(--fs-h1);
 }
 
 h2 {
-  font-size: 5em;
+  font-size: var(--fs-h2);
   line-height: 4em;
 }
 
 h3 {
-  font-size: 4.2em;
+  font-size: var(--fs-h3);
   text-align: center;
   line-height: 1em;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: var(--fs-h4);
   letter-spacing: 0.4px;
   line-height: 1em;
 }
 
 h5 {
-  font-size: 1.2em;
+  font-size: var(--fs-h5);
   line-height: 1em;
+}
+
+a {
+  color: var(--clr-textBlack);
+  text-decoration: none;
+}
+
+.dark-background {
+  background-color: var(--clr-darkBlue);
+  color: var(--clr-textWhite);
 }
 
 /*-------------------------------------Navbar */
@@ -131,4 +146,34 @@ header h2 {
 
 .quote {
   font-size: 2.5em;
+}
+
+/*-------------------------------------Main Section */
+#general-information p {
+  font-size: var(--fs-p);
+  text-align: center;
+  font-weight: var(--fw-regulare);
+}
+
+.link-btn {
+  background-color: var(--clr-blue);
+  color: var(--clr-textWhite);
+  font-family: var(--ff-accent);
+  font-size: 2em;
+  letter-spacing: 0.25em;
+  text-align: center;
+}
+
+/*-------------------------------------Day Structure Section */
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.service-box img {
+  width: 125px;
 }
